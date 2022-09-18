@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-World</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="mainDiv">
+        <div class="accordian">
+            <div class="upper">
+                    <h2>01</h2>
+                    <div class="name">Debabrata santra</div>
+                    <div class="openIcon">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                    <!-- <div class="closeIcon">
+                        <i class="fa fa-times"></i>
+                    </div> -->
+                <div class="hiddenBox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorum, eligendi sequi, velit sunt inventore voluptas vel, ullam facere sed repellat ad porro iure minus? Et, voluptatibus quaerat! Corporis sit quis numquam culpa. Veniam magnam officia possimus, nesciunt voluptates quod vel laborum esse id nemo, aliquam quos, voluptatibus debitis nisi!</p>
+                    <ul>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, et!</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, et!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="upper">
+                <h2>02</h2>
+                <div class="name">arnav</div>
+                <div class="openIcon">
+                    <i class="fa fa-plus"></i>
+                </div>
+                <!-- <div class="closeIcon">
+                    <i class="fa fa-times"></i>
+                </div> -->
+            <div class="hiddenBox">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorum, eligendi sequi, velit sunt inventore voluptas vel, ullam facere sed repellat ad porro iure minus? Et, voluptatibus quaerat! Corporis sit quis numquam culpa. Veniam magnam officia possimus, nesciunt voluptates quod vel laborum esse id nemo, aliquam quos, voluptatibus debitis nisi!</p>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, et!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, et!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="upper">
+            <h2>03</h2>
+            <div class="name">Abir paria</div>
+            <div class="openIcon">
+                <i class="fa fa-plus"></i>
+            </div>
+            <!-- <div class="closeIcon">
+                <i class="fa fa-times"></i>
+            </div> -->
+        <div class="hiddenBox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorum, eligendi sequi, velit sunt inventore voluptas vel, ullam facere sed repellat ad porro iure minus? Et, voluptatibus quaerat! Corporis sit quis numquam culpa. Veniam magnam officia possimus, nesciunt voluptates quod vel laborum esse id nemo, aliquam quos, voluptatibus debitis nisi!</p>
+            <ul>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, et!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, et!</li>
+            </ul>
+        </div>
+    </div>
+        </div>
+    </div>
+ 
+    
+<script>
+    const itemDiv = document.querySelectorAll('.upper');
+
+    for(let i=0; i<itemDiv.length;i++){
+        itemDiv[i].addEventListener('click', () => {
+            itemDiv[i].classList.toggle('active');
+        })
+    }
+</script>
+</body>
+</html>

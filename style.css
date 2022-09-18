@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+.body
+{
+    width: 100%;
+    background: #b7b7b7;
+}
+.accordian
+{
+    width: 50%;
+    margin: 20rem auto 0 auto;
+}
+.accordian .upper
+{
+    background: #fff;
+    box-shadow: 0 0 0.6rem 0 rgba(0,0,0,0.3);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: auto 1fr auto;
+    padding: 2rem;
+    margin: 2rem 0;
+    transition: all 0.5s linear;
+}
+.accordian .upper h2
+{
+    font-size: 2rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.accordian .upper .name
+{
+    font-size: 2rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.accordian .upper .openIcon
+{
+    font-size: 2rem;
+}
+.accordian .hiddenBox
+{
+    grid-column: 2/3;
+    display: none;
+}
+.accordian .hiddenBox p
+{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-family: sans-serif;
+}
+.accordian .hiddenBox ul
+{
+    margin: 1rem 0;
+}
+.accordian .hiddenBox ul li
+{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0.5rem 0 0 0;
+    font-weight: 700;
+    color: #000;
+}
+.active
+{
+    position: relative;
+}
+.active::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    border-top: 0.3rem solid blue;
+    animation: ani 0.5s linear forwards;
+}
+@keyframes ani {
+    0%{width: 0;}
+    100%{width: 100%;}
+}
+.active .hiddenBox
+{
+    display: block;
+}
